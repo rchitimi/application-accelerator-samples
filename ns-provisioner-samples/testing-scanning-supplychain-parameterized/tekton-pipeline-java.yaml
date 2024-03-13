@@ -42,7 +42,7 @@ spec:
               type: RuntimeDefault
         steps:
           - name: test
-            image: gradle
+            image: harbor.mytanzudemos.com/library/gradle:latest
             script: |-
               cd `mktemp -d`
               wget -qO- $(params.source-url) | tar xvz -m
